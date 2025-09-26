@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Index = () => {
+const AdminLanding = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -8,15 +8,15 @@ const Index = () => {
         <div className="text-lg font-semibold text-foreground">
           LocalDirectory
         </div>
-        <Link to="/admin" className="nav-link">
-          Login as Admin
+        <Link to="/" className="nav-link">
+          Back to Home
         </Link>
       </header>
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center">
         <h1 className="text-5xl font-bold text-center text-foreground">
-          Your Local Directory
+          Welcome Admin
         </h1>
       </main>
 
@@ -25,7 +25,7 @@ const Index = () => {
         <Link to="/upload" className="btn-link">
           Upload
         </Link>
-        <Link to="/view" className="btn-link">
+        <Link to="/admin/view" className="btn-link">
           View
         </Link>
       </footer>
@@ -33,4 +33,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default AdminLanding;
